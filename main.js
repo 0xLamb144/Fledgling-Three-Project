@@ -287,7 +287,7 @@ document.querySelector('#midoriya').
             duration: 1.5,
             delay: 2,
             onComplete: () => {
-                window.location = 'https://github.com/0xLamb144'
+                window.location = 'https://www.linkedin.com/in/alvinjohnson144/'
             }
 
         })
