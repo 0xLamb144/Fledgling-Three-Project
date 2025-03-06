@@ -6,4 +6,4 @@ location: "string",
 
 }
 
-console.log(newObject.name) // only use (.notation) these values should allways ebe incapaulated.
+console.log(newObject.name) // only use (.notation) these values should allways be incapaulated
