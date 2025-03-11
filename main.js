@@ -84,7 +84,7 @@ function generatePlane() {
 //Scene
 const scene = new THREE.Scene();
 //Raycaster
-const raycaster = new THREE.Raycaster()
+const raycaster = new THREE.Raycaster();
 //Camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 3000);
 //Renderer
