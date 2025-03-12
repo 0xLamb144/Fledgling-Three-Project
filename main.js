@@ -68,7 +68,7 @@ function generatePlane() {
         originalPosition =
         planeMesh.geometry.attributes.position
             .array
-    //Color attribute addition
+    // Color attribute addition
     const color = []
     for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
         color.push(0, 0.19, 0.4)
