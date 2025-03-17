@@ -262,6 +262,7 @@ gsap.to('button', {
     ease: 'expo.inOut'
 })
 
+////////// please find out what is this and how it can be utslized and changed accordingly//////::::
 // gsap.to('#mission', {
 //     opacity: 10,
 //     duration: 4,
