@@ -177,7 +177,7 @@ function animate() {
 
     const { array, originalPosition, randomValues } = planeMesh.geometry.attributes.position
     // change to For of loop
-    for (let i = 0; i < array.length -1; i += 3) {
+    for (let i = 0; i < array.length; i += 3) {
         //x
         array[i] = originalPosition[i] + Math.cos(frame + randomValues[i]) * 0.009
         //y
@@ -190,7 +190,7 @@ function animate() {
     if (intersects.length > 0) {
         const { color } = intersects[0].object.geometry.attributes
 
-        //Setting vertex colors
+//Setting vertex colors
 
 
         //Vertice 1
@@ -262,7 +262,7 @@ gsap.to('button', {
     ease: 'expo.inOut'
 })
 
-////////// please find out what is this and how it can be utslized and changed accordingly//////::::
+////////// please find out what is this and how it can be utilized and changed accordingly/////
 // gsap.to('#mission', {
 //     opacity: 10,
 //     duration: 4,
