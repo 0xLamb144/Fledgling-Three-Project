@@ -1,4 +1,6 @@
-// Dependecies 
+//////Dependecies
+
+// All listed Dependencies should be listed as the very first statements
 
 import * as THREE from 'three'
 import * as dat from 'dat.gui'
@@ -271,6 +273,8 @@ gsap.to('button', {
 //     ease: 'expoScale'
 // })
 
+
+///////// '#midiriya' what is this, an ID or a class ????////////
 document.querySelector('#midoriya').
     addEventListener('click', (event) => {
         event.preventDefault()
