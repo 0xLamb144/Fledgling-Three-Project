@@ -1,3 +1,5 @@
+// Dependecies 
+
 import * as THREE from 'three'
 import * as dat from 'dat.gui'
 import { OrbitControls } from '/OrbitControls'
@@ -116,7 +118,7 @@ const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 //Scene
 scene.add(planeMesh)
 
-generatePlane()
+generatePlane();
 
 ///////////////////////////////////////////////////////////////////
 
@@ -150,6 +152,8 @@ starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVerti
 const stars = new THREE.Points(starGeometry, starMaterial)
 scene.add(stars)
 
+///////////////////////////// Change Ambient lightinng asap 
+
 //Ambient Lights
 // const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
 // scene.add(ambientLight)
@@ -172,7 +176,8 @@ function animate() {
     frame += 0.01
 
     const { array, originalPosition, randomValues } = planeMesh.geometry.attributes.position
-    for (let i = 0; i < array.length; i += 3) {
+    // change to For of loop
+    for (let i = 0; i < array.length -1; i += 3) {
         //x
         array[i] = originalPosition[i] + Math.cos(frame + randomValues[i]) * 0.009
         //y
@@ -186,6 +191,8 @@ function animate() {
         const { color } = intersects[0].object.geometry.attributes
 
         //Setting vertex colors
+
+
         //Vertice 1
         color.setX(intersects[0].face.a, 0.1)
         color.setX(intersects[0].face.a, 0.5)
@@ -239,7 +246,7 @@ function animate() {
     // stars.rotation.x += 0.0007
 }
 //Call Animate function
-animate()
+animate();
 
 //Event Listener ( mouse move )
 addEventListener('mousemove', (event) => {
