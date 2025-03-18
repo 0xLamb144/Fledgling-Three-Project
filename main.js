@@ -192,8 +192,8 @@ function animate() {
     if (intersects.length > 0) {
         const { color } = intersects[0].object.geometry.attributes
 
-//Setting vertex colors
 
+//Setting vertex colors
 
         //Vertice 1
         color.setX(intersects[0].face.a, 0.1)
