@@ -72,7 +72,7 @@ function generatePlane() {
         planeMesh.geometry.attributes.position
             .array
             
-    // Color attribute addition
+    // Color attribute addition (r,b,g (16 bit, 10bit, 8bit) all hexadecimal))
     const color = []
     for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
         color.push(0, 0.19, 0.4)
@@ -88,7 +88,7 @@ function generatePlane() {
 //Scene
 const scene = new THREE.Scene();
 
-// Why are we using raycaster and not post processing 
+// Why are we using raycaster and not postprocessing ?
 
 //Raycaster
 const raycaster = new THREE.Raycaster();
