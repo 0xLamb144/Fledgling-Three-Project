@@ -164,7 +164,7 @@ starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVerti
 const stars = new THREE.Points(starGeometry, starMaterial)
 scene.add(stars)
 
-///////////////////////////// Change Ambient lightinng asap 
+/////////////////////////Ambient lightinng what other lighting options can we utilize 
 
 //Ambient Lights
 // const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
