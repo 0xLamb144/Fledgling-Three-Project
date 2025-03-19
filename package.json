@@ -1,5 +1,5 @@
 {
-  "name": "SecretHandshake",
+  "name": "SecretHandshake", // Change this naming convention 
   "private": true,
   "version": "0.0.0",
   "type": "module",
