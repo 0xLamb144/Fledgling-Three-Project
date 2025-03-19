@@ -71,6 +71,7 @@ function generatePlane() {
         originalPosition =
         planeMesh.geometry.attributes.position
             .array
+            
     // Color attribute addition
     const color = []
     for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
@@ -86,17 +87,24 @@ function generatePlane() {
 
 //Scene
 const scene = new THREE.Scene();
+
+// Why are we using raycaster and not post processing 
+
 //Raycaster
 const raycaster = new THREE.Raycaster();
+
 //Camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 3000);
+
 //Renderer
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight)
 renderer.setPixelRatio(devicePixelRatio) // set pixel Ratio to reduce the distortion of pixels on rotating image
 document.body.appendChild(renderer.domElement);
+
 //Orbit Controls
 new OrbitControls(camera, renderer.domElement);
+
 //Camera position
 camera.position.z = 70
 //Geometry
@@ -107,6 +115,7 @@ const planeGeometry = new THREE.PlaneGeometry(
     world.plane.heightSegments) // (width: Float, height: FLoat, widthSegments: Interger, heightSegments: Interger)
 
 /////// Created every time page is loaded //////////////////////
+
 //Material
 const planeMaterial = new THREE.MeshPhongMaterial({
     color: 'black',
@@ -114,8 +123,10 @@ const planeMaterial = new THREE.MeshPhongMaterial({
     flatShading: true,
     vertexColors: true
 })
+
 //Mesh
 const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
+
 //Scene
 scene.add(planeMesh)
 
