@@ -72,7 +72,7 @@ function generatePlane() {
         planeMesh.geometry.attributes.position
             .array
             
-    // Color attribute addition (r,b,g (16 bit, 10bit, 8bit) all hexadecimal))
+    // Color attribute addition { please create originals}(r,b,g all hexadecimal))
     const color = []
     for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
         color.push(0, 0.19, 0.4)
@@ -107,6 +107,7 @@ new OrbitControls(camera, renderer.domElement);
 
 //Camera position
 camera.position.z = 70
+
 //Geometry
 const planeGeometry = new THREE.PlaneGeometry(
     world.plane.width,
@@ -130,6 +131,7 @@ const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 //Scene
 scene.add(planeMesh)
 
+// Calling plane Function below 
 generatePlane();
 
 ///////////////////////////////////////////////////////////////////
@@ -141,7 +143,7 @@ light.position.set(0, 1, 1)
 scene.add(light)
 
 //Light
-const backLight = new THREE.DirectionalLight(0xffffff, 1,)
+const backLight = new THREE.DirectionalLight(0xffffff, 1,) // Hexidecimal values
 backLight.position.set(0, 0, -1)
 scene.add(backLight)
 
@@ -150,6 +152,8 @@ const starGeometry = new THREE.BufferGeometry()
 const starMaterial = new THREE.PointsMaterial({
     color: 0xffffff
 })
+
+// Stars Vertices array
 
 const starVerticies = []
 for (let i = 0; i < 10000; i++) {
