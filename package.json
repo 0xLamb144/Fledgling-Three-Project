@@ -1,11 +1,11 @@
 {
-  "name": "SecretHandshake", // npm run dev 
+  "name": "SecretHandshake", // New naming conventions 
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build", // Do not use VITE only Node package manager
+    "build": "vite build", // please explain what VITE is doing here 
     "preview": "vite preview" // Change preview to localhost ( i.e. localhost:3000/main.js)
   },
   "devDependencies": {
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "dat.gui": "^0.7.9", // Graphical User Interface 
-    "gsap": "^3.12.5",
+    "gsap": "^3.12.5", // GSAP stands for??
     "three": "^0.163.0" // 3JS (dependencies) three/fiber three/React three/drei postprocessing 
   }
 }
