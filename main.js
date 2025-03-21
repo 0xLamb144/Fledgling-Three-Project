@@ -131,6 +131,8 @@ const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 //Scene
 scene.add(planeMesh)
 
+// What statement is generate plane function on???
+
 // Calling plane Function below 
 generatePlane();
 
@@ -185,6 +187,7 @@ const mouse = {
 
 //Animate function(Initalize)
 let frame = 0
+
 function animate() {
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
@@ -262,7 +265,8 @@ function animate() {
     // stars.rotation.x += 0.0007
 }
 //Call Animate function
-animate();
+
+animate(); // what statement is animate() function on??
 
 //Event Listener ( mouse move )
 addEventListener('mousemove', (event) => {
