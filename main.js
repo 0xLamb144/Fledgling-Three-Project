@@ -131,7 +131,7 @@ const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 //Scene
 scene.add(planeMesh)
 
-// What statement is generate plane function on???
+// What statement is generate plane function on??? ( what line is this statement on)?
 
 // Calling plane Function below 
 generatePlane();
@@ -171,6 +171,8 @@ const stars = new THREE.Points(starGeometry, starMaterial)
 scene.add(stars)
 
 /////////////////////////Ambient lightinng what other lighting options can we utilize 
+
+// please uncomment statements 177-181
 
 //Ambient Lights
 // const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
