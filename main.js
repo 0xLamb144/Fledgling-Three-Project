@@ -1,4 +1,4 @@
-//////Dependecies
+//////Dependecies Below on or at the first statement 
 // All listed Dependencies should be listed as the very first statements
 
 import * as THREE from 'three'
@@ -71,8 +71,8 @@ function generatePlane() {
         originalPosition =
         planeMesh.geometry.attributes.position
             .array
-            
-    // Color attribute addition { please create originals}(r,b,g all hexadecimal))
+    
+    // Color attribute addition { please create originals }(r,b,g all hexadecimal))
     const color = []
     for (let i = 0; i < planeMesh.geometry.attributes.position.count; i++) {
         color.push(0, 0.19, 0.4)
@@ -99,7 +99,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 //Renderer
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight)
-renderer.setPixelRatio(devicePixelRatio) // set pixel Ratio to reduce the distortion of pixels on rotating image
+renderer.setPixelRatio(devicePixelRatio) // set pixel Ratio to reduce the distortion of pixels on rotating images
 document.body.appendChild(renderer.domElement);
 
 //Orbit Controls
@@ -115,7 +115,7 @@ const planeGeometry = new THREE.PlaneGeometry(
     world.plane.widthSegments,
     world.plane.heightSegments) // (width: Float, height: FLoat, widthSegments: Interger, heightSegments: Interger)
 
-/////// Created every time page is loaded //////////////////////
+/////// The plane Material will be Created every time this page is loaded and or refreshed //////////////////////
 
 //Material
 const planeMaterial = new THREE.MeshPhongMaterial({
