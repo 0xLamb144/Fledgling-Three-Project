@@ -1,5 +1,5 @@
 {
-  "name": "SecretHandshake", // New naming conventions Al in camel case notation.
+  "name": "SecretHandshake", // New naming conventions (ALL) in camel case notation.
   "private": true,
   "version": "0.0.0",
   "type": "module",
