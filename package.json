@@ -1,11 +1,11 @@
 {
-  "name": "SecretHandshake", // New naming conventions 
+  "name": "SecretHandshake", // New naming conventions Al in camel case notation.
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build", // please explain what VITE is doing here 
+    "build": "vite build", // please explain the entire function of VITE
     "preview": "vite preview" // Change preview to localhost ( i.e. localhost:3000/main.js)
   },
   "devDependencies": {
