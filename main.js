@@ -156,7 +156,6 @@ const starMaterial = new THREE.PointsMaterial({
 })
 
 // Stars Vertices array
-
 const starVerticies = []
 for (let i = 0; i < 10000; i++) {
     const x = (Math.random() - 0.5) * 2000
@@ -167,6 +166,7 @@ for (let i = 0; i < 10000; i++) {
 
 starGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starVerticies, 3))
 
+// Stars Variable 
 const stars = new THREE.Points(starGeometry, starMaterial)
 scene.add(stars)
 
