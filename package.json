@@ -1,5 +1,5 @@
 {
-  "name": "SecretHandshake", // New naming conventions (ALL) in camel case notation.
+  "name": "SecretHandshake" // please create all new class objects atarting with {SH}
   "private": true,
   "version": "0.0.0",
   "type": "module",
