@@ -133,6 +133,7 @@ const planeMesh = new THREE.Mesh(planeGeometry, planeMaterial)
 scene.add(planeMesh)
 
 // What statement is generate plane function on??? ( what line is this statement on)?
+// generatePlane({function}) can be located on statement 38.
 
 // Calling plane Function below 
 generatePlane();
