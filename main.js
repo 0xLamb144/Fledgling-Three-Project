@@ -267,6 +267,8 @@ function animate() {
     }
     // stars.rotation.x += 0.0007
 }
+
+// Currently not being utalized 
 //Call Animate function
 
 animate(); // what statement is animate() function on??
