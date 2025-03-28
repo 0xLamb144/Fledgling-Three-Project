@@ -190,8 +190,10 @@ const mouse = {
 
 
 //Animate function(Initalize)
+
 let frame = 0
 
+// change variable naming conventions 
 function animate() {
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
