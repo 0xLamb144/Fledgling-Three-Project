@@ -7,6 +7,8 @@ import { OrbitControls } from '/OrbitControls'
 import gsap from 'gsap'
 
 //////////////////////////////////
+
+// three.js -----> Python 
 // //dat.gui
 const gui = new dat.GUI()
 const world = {
