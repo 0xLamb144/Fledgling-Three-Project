@@ -118,7 +118,7 @@ const planeGeometry = new THREE.PlaneGeometry(
     world.plane.widthSegments,
     world.plane.heightSegments) // (width: Float, height: FLoat, widthSegments: Interger, heightSegments: Interger)
 
-/////// The plane Material will be Created every time this page is loaded and or refreshed //////////////////////
+/////// The plane Material will be Created every time this page is loaded and or refreshed ////
 
 //Material
 const planeMaterial = new THREE.MeshPhongMaterial({
@@ -247,6 +247,8 @@ function animate() {
             g: 0.5,
             b: 1
         }
+ 
+// How are these GSAP functions being delivered 
 
         gsap.to(hoverColor, {
             r: initialColor.r,
