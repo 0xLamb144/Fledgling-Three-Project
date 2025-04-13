@@ -8,7 +8,8 @@ import gsap from 'gsap'
 
 //////////////////////////////////
 
-// three.js -----> Python 
+// three.js -----> Python please introduce puthon script to statement 11
+
 // //dat.gui
 const gui = new dat.GUI()
 const world = {
@@ -159,7 +160,8 @@ const starMaterial = new THREE.PointsMaterial({
     color: 0xffffff
 })
 
-// Stars Vertices array
+// Stars Vertices array , How doesnthis work and what is this function actually doing.
+
 const starVerticies = []
 for (let i = 0; i < 10000; i++) {
     const x = (Math.random() - 0.5) * 2000
