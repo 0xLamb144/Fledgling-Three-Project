@@ -48,6 +48,7 @@ function generatePlane() {
     )
 
     //Vertice position randomization
+
     const { array } = planeMesh.geometry.attributes.position
 
     const randomValues = []
@@ -61,8 +62,8 @@ function generatePlane() {
             const z = array[i + 2]
 
             array[i] = x + (Math.random() - 0.5) * 3
-            array[i + 1] = y + (Math.random() - 0.5) * 3
-            array[i + 2] = z + (Math.random() - 0.5) * 3
+            array[i + 1] = y + (Math.random() - 0.5) * 4 // changed from 3 to 4 
+            array[i + 2] = z + (Math.random() - 0.5) * 4 // changed fron 3 to 4 ( change back at later date)
 
         }
         randomValues.push(Math.random() * Math.PI * 2)
