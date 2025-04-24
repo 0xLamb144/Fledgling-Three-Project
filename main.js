@@ -1,4 +1,5 @@
 //////Dependecies Below on or at the first statement 
+
 // All listed Dependencies should be listed as the very first statements
 
 import * as THREE from 'three'
@@ -8,7 +9,7 @@ import gsap from 'gsap'
 
 //////////////////////////////////
 
-// three.js -----> Python please introduce puthon script to statement 11
+// three.js -----> Python please introduce puthon script to statement 11 // This is statement 12.
 
 // //dat.gui
 const gui = new dat.GUI()
@@ -21,18 +22,22 @@ const world = {
     }
 }
 //width
+
 gui.add(world.plane, 'width', 1, 1000).
     onChange(generatePlane)
 
 //Height
+
 gui.add(world.plane, 'height', 1, 1000).
     onChange(generatePlane)
 
 //widthSegments
+
 gui.add(world.plane, 'widthSegments', 1, 1000).
     onChange(generatePlane)
 
 //heightSegments
+
 gui.add(world.plane, 'heightSegments', 1, 1000).
     onChange(generatePlane)
 
