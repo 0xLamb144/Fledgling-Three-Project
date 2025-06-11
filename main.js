@@ -51,7 +51,7 @@ function generatePlane() {
         world.plane.height,
         world.plane.widthSegments,
         world.plane.heightSegments
-    )
+    )// edit this here (on bus ...delete later)
 
     //Vertice position randomization
 
