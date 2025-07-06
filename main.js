@@ -10,6 +10,8 @@ import gsap from 'gsap'
 
 //////////////////////////////////
 
+// This is where py is going to be implicated 
+
 // three.js -----> Python please introduce puthon script to statement 11 // This is statement 12.
 
 // //dat.gui
@@ -100,6 +102,7 @@ function generatePlane() {
 const scene = new THREE.Scene();
 
 // Why are we using raycaster and not postprocessing ?
+// raycaster is being unfortunatly utalized due to the fact thste the npm has yet to be declared
 
 //Raycaster
 const raycaster = new THREE.Raycaster();
