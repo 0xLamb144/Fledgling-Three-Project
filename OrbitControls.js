@@ -275,7 +275,8 @@ class OrbitControls extends EventDispatcher {
 					zoomChanged = prevRadius != spherical.radius;
 
 				}
-
+// please add a function , actually you can delete this line of code because itsnirrevelant , you wetw ata a bar when you tried tonimput this line of code as a colment to remeind
+you of what nit to do
 				offset.setFromSpherical( spherical );
 
 				// rotate offset back to "camera-up-vector-is-up" space
