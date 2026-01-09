@@ -1531,4 +1531,4 @@ you of what nit to do
 
 }
 
-export { OrbitControls };
+export { OrbitControls }; //Can we turn this statement into a function on line 20
