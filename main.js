@@ -53,7 +53,8 @@ function generatePlane() {
         world.plane.height,
         world.plane.widthSegments,
         world.plane.heightSegments
-    )// edit this here (on bus ...delete later)
+    )
+    // Long form? / Short form 
 
     //Vertice position randomization
 
