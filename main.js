@@ -289,9 +289,11 @@ function animate() {
 }
 
 // Currently not being utalized 
-//Call Animate function
 
-animate(); // what statement is animate() function on??
+
+// (statement below) Calls Animate function ------>
+
+animate(); // what statement is animate() function on?? ( animate function is on statement 296.
 
 //Event Listener ( mouse move )
 addEventListener('mousemove', (event) => {
@@ -307,7 +309,7 @@ gsap.to('button', {
     ease: 'expo.inOut'
 })
 
-////////// please find out what is this and how it can be utilized and changed accordingly/////
+////////// please find out what is this and how it can be utilized and changed accordingly.
 // gsap.to('#mission', {
 //     opacity: 10,
 //     duration: 4,
