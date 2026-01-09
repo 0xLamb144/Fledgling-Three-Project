@@ -72,10 +72,10 @@ function generatePlane() {
 
             array[i] = x + (Math.random() - 0.5) * 3
             array[i + 1] = y + (Math.random() - 0.5) * 4 // changed from 3 to 4 
-            array[i + 2] = z + (Math.random() - 0.5) * 4 // changed fron 3 to 4 ( change back at later date)
+            array[i + 2] = z + (Math.random() - 0.5) * 4 // changed fron 3 to 4 ( change back at later date (Also, play around with the verticies values))
 
         }
-        randomValues.push(Math.random() * Math.PI * 2)
+        randomValues.push(Math.random() * Math.PI * 2) // randomize values between positive infinity and negative infinity 
     }
 
     planeMesh.geometry.attributes.position.
