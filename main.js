@@ -349,7 +349,7 @@ document.querySelector('#midoriya').
 
         })
     })
-
+ // what statement is this recering to ? 
 addEventListener('resize', () => {
     camera.aspect = innerWidth / innerHeight
     camera.updateProjectionMatrix()
