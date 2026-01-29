@@ -319,7 +319,7 @@ gsap.to('button', {
 // })
 
 
-///////// '#midiriya' what is this, an ID or a class ????////////
+// '#midiriya' (Hashtage denotes?, hashtags are defined for ID classes) what is this, an ID or a class ?///
 document.querySelector('#midoriya').
     addEventListener('click', (event) => {
         event.preventDefault()
