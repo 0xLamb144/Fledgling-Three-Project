@@ -1,6 +1,6 @@
 //////Dependecies Below on or at the first statement // How many functions ?
 
-// All listed Dependencies should be listed as the very first statements
+// All listed Dependencies should be listed as the very first statements (ie the initialbfirst line if code)
 
 
 import * as THREE from 'three'
