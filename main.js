@@ -343,7 +343,7 @@ document.querySelector('#midoriya').
             y: 1000,
             ease: 'power3.in',
             duration: 1.5,
-            delay: 2,
+            delay: 2.5,
             onComplete: () => {
                 window.location = 'https://www.linkedin.com/in/alvinjohnson144/'
             }
