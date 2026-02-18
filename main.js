@@ -321,6 +321,8 @@ gsap.to('button', {
 
 
 // '#midiriya' (Hashtage denotes?, hashtags are defined for ID classes) what is this, an ID or a class ?///
+
+// The Midiriya ID class is located within the HTML ID capture of the index.html file folder ( statement 325 )
 document.querySelector('#midoriya').
     addEventListener('click', (event) => {
         event.preventDefault()
