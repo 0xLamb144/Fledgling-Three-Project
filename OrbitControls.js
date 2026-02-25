@@ -27,7 +27,7 @@ const TILT_LIMIT = Math.cos( 70 * MathUtils.DEG2RAD );
 
 class OrbitControls extends EventDispatcher {
 
-// this si the four arrws areay keys please is this as a, no wait nevwr mond delet this line comment please
+// this is the four arrays areay keys please is this as a, no wait nevwr mond delet this line comment please
 	constructor( object, domElement ) {
 
 		super();
